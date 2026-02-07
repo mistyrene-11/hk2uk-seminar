@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HK2UK Property 遷居｜專題講座 免費登記</title>
+  <style>
+    :root{
+      --bg:#071022;
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.72);
+      --line:rgba(255,255,255,.14);
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --r:18px; --r2:12px;
+      --a:#39D5C6; --a2:#7C5CFF; --a3:#FFB020;
+      --max:1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "PingFang HK", "PingFang TC";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--font); color:var(--text); min-height:100vh;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(124,92,255,.28), transparent 60%),
+        radial-gradient(900px 500px at 90% 20%, rgba(57,213,198,.22), transparent 55%),
+        radial-gradient(800px 450px at 60% 95%, rgba(255,176,32,.18), transparent 55%),
+        var(--bg);
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 70px;}
+    .topbar{
+      display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px;
+      padding:14px 16px; border:1px solid var(--line);
+      background:rgba(255,255,255,.05);
+      border-radius:var(--r); box-shadow:var(--shadow);
+    }
+    .brand{display:flex; gap:12px; align-items:center;}
+    .logo{
+      width:42px; height:42px; border-radius:12px;
+      background:linear-gradient(135deg,var(--a2),var(--a));
+    }
+    .brand h1{margin:0; font-size:15px;}
+    .brand p{margin:2px 0 0; font-size:12px; color:var(--muted)}
+    .btn{
+      border:0; cursor:pointer; padding:10px 16px; border-radius:999px;
+      font-weight:900; color:#081022;
+      background:linear-gradient(135deg,var(--a),var(--a3));
+    }
+    .panel{
+      margin-top:16px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.05);
+      border-radius:var(--r);
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    h2{margin:0 0 8px; font-size:24px;}
+    .sub{color:var(--muted); font-size:14px; line-height:1.6}
+    .speaker{
+      display:flex; gap:14px; align-items:center; margin-top:14px;
+      border:1px solid var(--line); border-radius:var(--r2);
+      padding:12px; background:rgba(255,255,255,.04);
+    }
+    .avatar{
+      width:70px; height:70px; border-radius:16px; object-fit:cover;
+      border:1px solid rgba(255,255,255,.25);
+    }
+    .speaker h4{margin:0;}
+    .speaker p{margin:4px 0 0; font-size:13px; color:var(--muted)}
+    .card{
+      margin-top:16px;
+      border:1px solid rgba(255,255,255,.18);
+      background:rgba(0,0,0,.25);
+      border-radius:var(--r);
+      padding:16px;
+    }
+    .small{font-size:13px; color:var(--muted); line-height:1.6}
+    .footer{text-align:center; margin-top:18px; font-size:12px; color:var(--muted)}
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>
+        <h1>HK2UK Property 遷居</h1>
+        <p>Your Complete UK Property Solution</p>
+      </div>
+    </div>
+    <button class="btn" onclick="openForm()">立即登記</button>
+  </div>
+
+  <div class="panel">
+    <h2>HK2UK Property 遷居 ｜ 專題講座 免費登記</h2>
+    <p class="sub">
+      Part 1：IMPEX 國際移民及置業博覽（In-booth / On-stage）<br>
+      Part 2：酒店專題講座（Marco Polo Hong Kong）<br><br>
+      以 <strong>private bank style</strong>，深入拆解 2026 英國置業與投資趨勢，
+      包括 Supported Living（政府背書需求）、法律與稅務重點。
+    </p>
+
+    <div class="speaker">
+      <img src="matthew.png" class="avatar" alt="Matthew">
+      <div>
+        <h4>Matthew｜主持</h4>
+        <p>HK2UK Property 創辦人<br>面對面專業講解英國物業策略</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="small">
+        ✔ 適合香港高資產投資者<br>
+        ✔ 清楚比較不同英國物業投資模式<br>
+        ✔ 律師及會計師角度補充（部分場次）
+      </p>
+      <button class="btn" style="width:100%; margin-top:10px;" onclick="openForm()">
+        免費登記講座
+      </button>
+    </div>
+
+    <div class="footer">
+      © HK2UK Property 遷居
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const FORM_URL = "https://forms.gle/ASnt5m25p9oMP9jy9";
+  function openForm(){
+    window.open(FORM_URL, "_blank");
+  }
+</script>
+</body>
+</html>
